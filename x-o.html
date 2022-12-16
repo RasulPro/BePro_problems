@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XO</title>
+</head>
+<body style="margin: 0px; width: 610px; height: 610px;">
+    <div>
+        <button id="result" style="width: 400px; height: 80px; top: 200px; left: 300px; top: 90px; display: block; position: absolute;  font-size: 30px; box-sizing: border-box;" ></button>
+        <button id="refresh" style="width: 200px; height: 80px; top: 200px; left: 700px; top: 90px; display: block; position: absolute;  font-size: 30px; box-sizing: border-box;" >REFRESH</button>
+        <button id="box1" style="width: 200px; height: 200px; top: 200px; left: 300px; display: inline-block; position: absolute;  font-size: 160px; box-sizing: border-box;" value="0"></button>
+        <button id="box2" style="width: 200px; height: 200px; top: 200px; left: 500px; display: inline-block; position: absolute;  font-size: 160px; box-sizing: border-box;" value="0"></button>
+        <button id="box3" style="width: 200px; height: 200px; top: 200px; left: 700px; display: inline-block; position: absolute;  font-size: 160px; box-sizing: border-box;" value="0"></button>
+        <button id="box4" style="width: 200px; height: 200px; top: 400px; left: 300px; display: inline-block; position: absolute;  font-size: 160px; box-sizing: border-box;" value="0"></button>
+        <button id="box5" style="width: 200px; height: 200px; top: 400px; left: 500px; display: inline-block; position: absolute;  font-size: 160px; box-sizing: border-box;" value="0"></button>
+        <button id="box6" style="width: 200px; height: 200px; top: 400px; left: 700px; display: inline-block; position: absolute;  font-size: 160px; box-sizing: border-box;" value="0"></button>
+        <button id="box7" style="width: 200px; height: 200px; top: 600px; left: 300px; display: inline-block; position: absolute;  font-size: 160px; box-sizing: border-box;" value="0"></button>
+        <button id="box8" style="width: 200px; height: 200px; top: 600px; left: 500px; display: inline-block; position: absolute;  font-size: 160px; box-sizing: border-box;" value="0"></button>
+        <button id="box9" style="width: 200px; height: 200px; top: 600px; left: 700px; display: inline-block; position: absolute;  font-size: 160px; box-sizing: border-box;" value="0"></button>
+    </div>
+<script>
+    var result = document.getElementById('result');
+    var refresh = document.getElementById('refresh');
+    var box1 = document.getElementById('box1');
+    var box2 = document.getElementById('box2');
+    var box3 = document.getElementById('box3');
+    var box4 = document.getElementById('box4');
+    var box5 = document.getElementById('box5');
+    var box6 = document.getElementById('box6');
+    var box7 = document.getElementById('box7');
+    var box8 = document.getElementById('box8');
+    var box9 = document.getElementById('box9');
+
+
+    var number1;
+    var number2;
+    var number3;
+    var number4;
+    var number5;
+    var number6;
+    var number7;
+    var number8;
+    var number9;
+
+
+
+
+    document.getElementById("refresh").addEventListener("click", refreshall);
+    document.getElementById("box1").addEventListener("click", function1);
+    document.getElementById("box2").addEventListener("click", function2);
+    document.getElementById("box3").addEventListener("click", function3);
+    document.getElementById("box4").addEventListener("click", function4);
+    document.getElementById("box5").addEventListener("click", function5);
+    document.getElementById("box6").addEventListener("click", function6);
+    document.getElementById("box7").addEventListener("click", function7);
+    document.getElementById("box8").addEventListener("click", function8);
+    document.getElementById("box9").addEventListener("click", function9);
+
+
+
+
+     function refreshall (){
+        result.innerHTML = "";
+        box1.innerHTML = "";
+        box2.innerHTML = "";
+        box3.innerHTML = "";
+        box4.innerHTML = "";
+        box5.innerHTML = "";
+        box6.innerHTML = "";
+        box7.innerHTML = "";
+        box8.innerHTML = "";
+        box9.innerHTML = "";
+     }
+     function function1 (){
+        box1.innerHTML = "x";
+        box1.value = -5;
+        number1 = box1.value*1;
+     
+     }
+     function function2 (){
+        box2.innerHTML = "x";
+        box2.value = -5;
+        number2 = box1.value*1;
+     }
+     function function3 (){
+        box3.innerHTML = "x";
+        box3.value = -5;
+        number3 = box1.value*1;
+     }
+     function function4 (){
+        box4.innerHTML = "x";
+        box4.value = -5;
+        number4 = box1.value*1;
+     }
+     function function5 (){
+        box5.innerHTML = "x";
+        box5.value = -5;
+        number5 = box1.value*1;
+     }
+     function function6 (){
+        box6.innerHTML = "x";
+        box6.value = -5;
+        number6 = box1.value*1;
+     }
+     function function7 (){
+        box7.innerHTML = "x";
+        box7.value = -5;
+        number7 = box1.value*1;
+     }
+     function function8 (){
+        box8.innerHTML = "x";
+        box8.value = -5;
+        number8 = box1.value*1;
+     }
+     function function9 (){
+        box9.innerHTML = "x";
+        box9.value = -5;
+        number9 = box1.value*1;
+        console.log(parseInt(box1.value)  + parseInt(box5.value));
+     }
+
+ 
+
+</script>
+
+</body>
+</html>
